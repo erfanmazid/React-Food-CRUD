@@ -1,0 +1,74 @@
+{
+  "food": [
+    {
+      "id": 1,
+      "name": "Margherita Pizza",
+      "price": "12.99",
+      "category": "Italian",
+      "description": "A classic margherita pizza with fresh mozzarella, tomatoes, and basil."
+    },
+    {
+      "id": 2,
+      "name": "California Roll",
+      "price": "8.99",
+      "category": "Japanese",
+      "description": "A sushi roll with crab, avocado, and cucumber, topped with sesame seeds."
+    },
+    {
+      "id": 3,
+      "name": "Cheeseburger",
+      "price": "9.99",
+      "category": "American",
+      "description": "A juicy cheeseburger with cheddar cheese, lettuce, tomato, and pickles."
+    },
+    {
+      "id": 4,
+      "name": "Spaghetti Carbonara",
+      "price": "10.99",
+      "category": "Italian",
+      "description": "Spaghetti pasta in a creamy egg and Parmesan sauce with pancetta."
+    },
+    {
+      "id": 5,
+      "name": "Chicken Tikka Masala",
+      "price": "13.99",
+      "category": "Indian",
+      "description": "Grilled chicken pieces in a spiced curry sauce with tomatoes and cream."
+    },
+    {
+      "id": 6,
+      "name": "Pad Thai",
+      "price": "11.99",
+      "category": "Thai",
+      "description": "Stir-fried rice noodles with shrimp, tofu, peanuts, bean sprouts, and eggs."
+    },
+    {
+      "id": 7,
+      "name": "Falafel Wrap",
+      "price": "7.99",
+      "category": "Middle Eastern",
+      "description": "A wrap filled with crispy falafel, hummus, lettuce, tomatoes, and tahini sauce."
+    },
+    {
+      "id": 8,
+      "name": "Caesar Salad",
+      "price": "8.99",
+      "category": "Salad",
+      "description": "Romaine lettuce with Caesar dressing, croutons, and Parmesan cheese."
+    },
+    {
+      "id": 9,
+      "name": "Fish Tacos",
+      "price": "12.99",
+      "category": "Mexican",
+      "description": "Tacos with grilled fish, cabbage slaw, avocado, and a spicy mayo sauce."
+    },
+    {
+      "id": 10,
+      "name": "Tiramisu",
+      "price": "6.99",
+      "category": "Dessert",
+      "description": "A classic Italian dessert with layers of coffee-soaked ladyfingers and mascarpone cheese."
+    }
+  ]
+}
