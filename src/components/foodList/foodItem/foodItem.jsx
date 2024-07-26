@@ -1,6 +1,5 @@
 export default function FoodItem({ food }) {
-  const { name, price, categori, description } = food;
-
+  const { name, price, category, description } = food;
   return (
     <>
       <div className="max-w-sm rounded overflow-hidden shadow-lg bg-white">
@@ -11,7 +10,7 @@ export default function FoodItem({ food }) {
         <div className="px-6 pt-4 pb-2 flex justify-between ">
           <div>
             <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-              #{categori}
+              #{category}
             </span>
             <span className="inline-block bg-green-200 rounded-full px-3 py-1 text-sm font-semibold text-green-700 mr-2 mb-2">
               ${price}

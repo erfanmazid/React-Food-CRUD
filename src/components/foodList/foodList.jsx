@@ -16,8 +16,9 @@ export default function FoodList() {
       </header>
       <main>
         <div className="grid grid-cols-3 gap-5 p-5">
-          {data.data &&
-            data.data.map((food) => <FoodItem food={food} key={food.id} />)}
+          {data?.data?.map((food) => (
+            <FoodItem food={food} key={food.id} />
+          ))}
         </div>
       </main>
     </>

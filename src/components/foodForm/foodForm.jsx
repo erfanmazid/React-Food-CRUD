@@ -3,7 +3,7 @@ import { axiosInstans } from "../../api/api";
 import { useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
-import { useMutation } from "@tanstack/react-query";
+import { useMutation, useQueryClient } from "@tanstack/react-query";
 
 const foodSchema = z.object({
   name: z.string().min(3, "name shoud more than 3 char"),
@@ -16,6 +16,8 @@ const foodSchema = z.object({
 });
 
 export default function FoodForm({ item }) {
+  const qc = useQueryClient();
+
   const {
     register,
     handleSubmit,
@@ -35,6 +37,9 @@ export default function FoodForm({ item }) {
   const { mutate, isPending } = useMutation({
     mutationFn: async (data) => await axiosInstans.post("/food", data),
     onError: (err) => console.log(err),
+    onSuccess: () => {
+      qc.invalidateQueries(["foodList"]);
+    },
   });
 
   const onSubmit = (values) => {
